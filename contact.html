@@ -16,6 +16,8 @@
     <body id="form-page">
         <header>
             <nav class="menu">
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li ><a href="actu.html">Actualité</a></li>
@@ -35,23 +37,24 @@
                     </h1>
                 </div>
                 <div class="form-info">
-                    <label for="name">Nom :</label>
+                    <label for="name">Nom:</label>
                     <input type="text" id="name" name="user_name">
                 </div>
                 <div class="form-info">
-                    <label for="mail">e-mail&nbsp;:</label>
+                    <label for="mail">email:</label>
                     <input type="email" id="mail" name="user_mail">
                 </div>
                 <div class="form-info">
-                    <label for="msg">Message :</label>
+                    <label for="msg">Message:</label>
                     <textarea id="msg" name="user_message"></textarea>
                 </div>
-
-                <legend>Je désire recevoir des promos sur les prochains concerts</legend>
-                <div>
-                <input type="checkbox" id="scales" name="scales" checked>
-                <label for="scales">Je m'inscris à la newsletter !</label>
-                </div>
+                
+                    <legend>Je désire recevoir des promos sur les prochains concerts</legend>
+                    <div id="newsletter">
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <label for="scales">Je m'inscris à la newsletter !</label>
+                    </div>
+                
              
                 <div class="button">
                     <button id="form-subscrib" type="submit">Let's get in touch !!!</button>
