@@ -312,7 +312,6 @@ footer{
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
 
 .elem-futur{
@@ -389,7 +388,6 @@ footer{
 #form-contact h1{
    letter-spacing: 0.2em; 
    font-size: 2em;
-   
 }
 
 .form-info{
@@ -436,7 +434,6 @@ textarea{
     from{background-color: #9c8553; color:white; font-size: 1.2em;}
     to {background-color: beige; color:#AF8327; font-size:1.3em;font-weight: bold;}
 }
-
 
 @media (prefers-color-scheme: dark) {
     #home{
@@ -821,6 +818,35 @@ textarea{
         background-image: url(images/live-makotosan.jpg);
         background-repeat: no-repeat;
     }
+
+    #bandeau-even h1{
+        color: beige;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Poor Story', cursive;
+        font-weight: bold;
+        letter-spacing: .4rem;
+        padding:40% 20% 5% 20%;
+        animation: waviy 5s infinite linear;
+    }
+    
+    @keyframes waviy {
+        0%,100% {
+          color: #E7FF1D;
+        }
+        20%,80%{
+            color: #FF46F7;
+            font-size: 3.2em;;
+        }
+        40%,60% {
+          color: aqua;
+          font-size: 3.4em;
+        }
+        50%{
+            color: rgb(30, 255, 0);
+          font-size: 3.6em;
+        }
+      }
     
     #bloc-evenements{
         display: flex;
@@ -890,6 +916,7 @@ textarea{
     #form-contact label{
         color:beige;
         font-size: 3.5rem;
+        padding:1%;
     }
     #form-contact legend{
         color:beige;
@@ -912,9 +939,19 @@ textarea{
     }
 
     #newsletter{
-        padding:10% 25% 10% 25%;
+        width:100%;
+        display:inline-block;
         display: flex;
-        flex-direction: row;
+    }
+    #newsletter label{
+        font-size: 0.7em;
+        width:200%;
+        height:150px;
+    }
+
+    #scales{
+        width:60%;
+        margin:5%;
     }
     
     #form-subscrib{
