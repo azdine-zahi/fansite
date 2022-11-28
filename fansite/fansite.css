@@ -1,0 +1,966 @@
+*{
+    margin:0;
+    padding:0;
+}
+#home{
+    background-image: url("images/slimane.jpeg");
+}
+
+.menu{
+    position: sticky;
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    font-family: 'Poor Story', cursive;
+}
+
+.menu ul, .menu li {
+	margin: 0;
+	padding: 2% 0% 0% 0%;
+    text-decoration: none;
+    background-color: rgb(84, 78, 77);
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 20%;
+}
+
+.menu li:hover{
+    animation-name: colorMenu;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.menu a{
+    text-decoration: none;    
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.menu ul {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	list-style: none;
+	width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+}
+
+label
+{
+    display: none;
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+#home-content{
+    display: flex;
+    flex-direction: column;
+    padding:5% 10% 2% 1%;
+    align-items: center;
+}
+
+#home-content h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    color: rgb(148, 179, 124);
+    font-family: 'Poor Story', cursive;
+}
+#home-content h2{
+    font-size: 2em;
+    color: rgb(148, 179, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+#home-content h1:hover{
+    text-transform: uppercase;
+    font-size: 3em;
+    animation-direction: alternate;
+    animation-name: titleColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorMenu{
+    from{background-color:  rgb(148, 179, 124);}
+    to {background-color: rgb(158, 224, 101);}
+}
+@keyframes titleColor {
+    from {color:rgb(148, 179, 124) ; font-size:3em;}
+    to {color:goldenrod;font-size:3.5em; }
+  }
+
+
+
+
+#footer-home{
+    background-color: rgb(84, 78, 77);
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    background-color:  rgb(84, 78, 77);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#social-media{
+    width:50%;
+    padding:1% 5% 1% 5%;
+}
+.menu-footer{
+    position: sticky;
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    background-color:  rgb(84, 78, 77);
+    height: 100px;
+    width: 50%;
+    padding:1% 5% 1% 5%;
+}
+
+.logo{
+    margin:5% 1% 2% 1%;
+    width: 40px;
+    border-radius: 30px;
+}
+.logo:hover{
+    filter:invert(75%);
+}
+
+.menu-footer ul {
+	display: flex;
+    justify-content: space-around;
+	list-style: none;
+	width: 100%;
+    position: sticky;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.menu-footer ul a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.menu-footer ul a:hover{
+    color:rgb(248, 222, 189);
+}
+
+#bloc-actu-content{
+    display: flex;
+    flex-direction: column;
+    padding:5% 5% 5% 5%;
+    background-color: antiquewhite;
+}
+
+.image-actu{
+    width:40%;
+}
+
+.bloc-actu{
+    background-color: rgb(148, 179, 124);
+    display: flex;
+    flex-direction: row;
+    width:60%;
+    margin: 2% 0% 1% 20%;
+    justify-content: center;
+    padding:2% 2% 2% 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-actu{
+    display: flex;
+    flex-direction: column;
+    padding:2% 2% 2% 2%;
+}
+
+.content-actu p, .content-actu h1{
+    margin:2% 2% 2% 2%;
+    font-family: 'Poor Story', cursive;
+}
+
+#clip-page{
+    background-color: antiquewhite;
+    background-image: url("images/fish.png");
+    background-size: 40%;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+
+#clip-spotify{
+    padding:5%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#all-clip{
+    margin:2% 2% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#clip-page h1{
+    text-align: center;
+    color: rgb(148, 179, 124);
+    text-transform: uppercase;
+    margin:4% 0% 4% 8%;
+    font-size: 2.5em;
+    font-family: 'Poor Story', cursive;
+}
+.show-clip{
+    background-color: rgb(148, 179, 124);
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin: 2% 0% 2% 2%;
+    justify-content: center;
+    padding:2% 2% 2% 2%;
+}
+
+.show-clip p, .show-clip h2{
+    margin:2% 2% 2% 2%;
+    font-family: 'Poor Story', cursive;
+}
+
+.spotify-element{
+   padding-left:10%;
+   width:40%;
+}
+
+.spotify-element:hover{
+    filter: brightness(140%);
+}
+
+#body-even{
+    background-color: antiquewhite;
+}
+
+#bandeau-even{
+    width:100%;
+    height:100%;
+    background-image: url(images/slimane-bg.png);
+}
+
+#bandeau-even h1{
+    color: beige;
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Poor Story', cursive;
+    font-weight: bold;
+    letter-spacing: .4rem;
+    padding:5% 10% 5% 60%;
+    animation: waviy 10s infinite ease-in-out;
+}
+
+@keyframes waviy {
+    0%,100% {
+      transform: translateY(80px);
+      color: #E7FF1D;
+    }
+    20%{
+        transform: translateY(20px);
+        transform:translateX(20px);
+        color: #FF46F7;
+        font-size: 4.8em;;
+    }
+    40% {
+      transform: translateY(0px);
+      transform:translateX(10px);
+      color: aqua;
+      font-size: 5.2em;
+    }
+  }
+
+
+#bloc-evenements{
+    display: flex;
+    flex-direction: row;
+    padding:5%;
+    font-family: 'Poor Story', cursive;
+}
+
+#futur, #passe{
+    width:100%;
+    margin:2% 2% 2% 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.elem-futur{
+    width:95%;
+    margin:2% 1% 2% 3%;
+    background-color: #eeb53b;
+    border-radius: 50px;
+    color:black;
+    font-family: 'Poor Story', cursive;
+}
+
+.elem-futur a {
+    text-decoration: none;
+    color:black
+}
+
+.elem-futur a:hover{
+    color: #E8CB8F;
+    font-weight: bold;
+}
+
+
+.elem-passe{
+    width:95%;
+    margin:2% 2% 2% 2%;
+    background-color: #E8CB8F;
+    border-radius: 50px;
+    color:#C39430;
+}
+
+.elem-futur:hover{
+    animation: elem 0.1s linear 1 normal forwards;
+}
+
+@keyframes elem{
+    from{background-color: #eeb53b; color:black; width: 95%;}
+    to {background-color: #AF8327; color:white; width:95%}
+}
+
+.elem-futur-titre h1, .elem-passe-titre h1{
+    font-size: 1.6em;
+    margin:2%;
+    color: #AF8327;
+}
+
+.elem-futur p, .elem-passe p{
+    font-size: 1.4em;
+    margin:2%;
+}
+
+#form-page{
+    background-color: #E8CB8F;
+    background-image: url("images/bambou.jpg");
+    background-size: 100%;
+}
+
+#form-contact{
+    background-color:  rgb(148, 179, 124);
+    opacity: 90%;
+    color: beige;
+    margin:10%;
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    height:75vh;
+    padding:2%;
+    align-items: center;
+    margin: 10% 20% 10% 15%;
+    border-radius: 50px;
+    font-family: 'Poor Story', cursive;
+    font-size: 1.4em;
+}
+
+#form-contact h1{
+   letter-spacing: 0.2em; 
+   font-size: 2em;
+}
+
+.form-info{
+    width: 80%;
+    margin:2% 15% 2% 15%;
+}
+
+#form-contact label{
+    color:beige;
+    font-size: 1em;
+    display: inline-block;
+    text-align: right;
+}
+
+input{
+    height:30px;
+    width:100%;
+}
+
+textarea{
+    width:150%;
+    height:20%;
+}
+
+#form-subscrib{
+    width:100%;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #9c8553;
+    color:white;
+    font-family: 'Poor Story', cursive;
+    margin:3%;
+    border: none;
+    font-size: 1.2em;
+}
+
+#form-subscrib:hover{
+    animation-name: color-subscrib;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-subscrib{
+    from{background-color: #9c8553; color:white; font-size: 1.2em;}
+    to {background-color: beige; color:#AF8327; font-size:1.3em;font-weight: bold;}
+}
+
+@media (prefers-color-scheme: dark) {
+    #home{
+        background-image: url("images/Makotosan-sombre.jpg");
+        background-position: center;
+        width: auto;
+    }
+
+    #footer-home{
+        background-color: rgb(66, 12, 45);
+    }
+
+    .menu-footer{
+        background-color: rgb(66, 12, 45);
+    }
+
+    footer{
+        background-color: rgb(66, 12, 45);
+    }
+
+    .menu-footer{
+        background-color: rgb(66, 12, 45);
+    }
+    
+    .logo{
+        margin:5% 1% 2% 1%;
+        width: 40px;
+        border-radius: 30px;
+    }
+    .logo:hover{
+        filter:invert(75%);
+    }
+    
+    .menu-footer ul a{
+        text-decoration: none;
+        color:greenyellow;
+        font-weight: bold;
+    }
+    
+    .menu-footer ul a:hover{
+        color:fuchsia
+    }
+
+    .menu ul, .menu li {
+        background-color: rgb(66, 12, 45);
+    }
+    
+    .menu li:hover{
+        animation-name: colorMenu;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes colorMenu{
+        from{background-color: rgb(66, 12, 45);}
+        to {background-color: rgb(229, 54, 182);}
+    }
+
+    #home-content h1, #home-content h2{
+        text-transform: uppercase;
+        font-size: 3em;
+        color: rgb(255, 56, 145);
+        font-family: 'Poor Story', cursive;
+    }
+    #home-content h1:hover{
+        text-transform: uppercase;
+        font-size: 3em;
+        animation-direction: alternate;
+        animation-name: titleColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes titleColor {
+        from {color:rgb(255, 56, 145) ; font-size:3em;}
+        to {color:cyan;font-size:3.5em; }
+      }
+
+      #bloc-actu-content{
+        background-color: rgb(48, 41, 41);
+    }
+
+    .bloc-actu{
+        background-color: rgb(71, 21, 51);
+        box-shadow: 0px 0px 15px 5px rgb(199, 126, 172);
+        color:aliceblue;
+    }
+    .bloc-actu:hover{
+        background-color: rgb(225, 56, 132);
+        box-shadow: 0px 0px 25px 8px rgb(199, 126, 172);
+        color:aliceblue;
+    }
+    
+    #bloc-evenements{
+        background-color: rgb(48, 41, 41);
+    }
+    
+    .elem-futur{
+        background-color: #46d0f7;
+        color:white;
+        font-weight: bold;
+        box-shadow: 0px 0px 0px 0px rgb(194, 237, 255);
+    }
+    
+    .elem-passe{
+        background-color: #e88fb4;
+        color:#fa005c;
+    }
+    
+    .elem-futur:hover{
+        animation-name: elem;
+        animation-duration: 0.1s;
+        animation-iteration-count: 1;
+        animation: elem 0.1s linear 1 normal forwards;
+    }
+    
+    @keyframes elem{
+        from{background-color: #2e8aa3; color:white;}
+        to {background-color: #b1e2ff; color:rgb(100, 101, 135); box-shadow: 0px 0px 10px 3px #85d2ff;}
+    }
+    
+    .elem-futur-titre h1, .elem-passe-titre h1{
+        font-size: 1.6em;
+        margin:2%;
+        color: #46d0f7;
+        text-shadow: 1px 1px 3px rgb(231, 233, 255);
+    }
+    
+    .elem-futur p, .elem-passe p{
+        font-size: 1.4em;
+        margin:2%;
+    }
+    
+    #clip-page{
+        background-color: rgb(48, 41, 41);
+    }
+
+    .show-clip{
+        background-color: rgb(207, 36, 116);
+        box-shadow: 0px 0px 15px 5px rgb(255, 192, 227);
+        width:35%;
+
+    }
+    .show-clip:hover{
+        background-color: rgb(255, 40, 140);
+        box-shadow: 0px 0px 25px 5px rgb(255, 192, 227);
+    }
+    
+    #clip-page h1{
+        color: rgb(157, 255, 82);
+        width:80%;
+    }
+
+    #clip-page h1:hover{
+        color: rgb(255, 230, 0);
+    }
+    
+    .spotify-element:hover{
+        filter: hue-rotate(180deg) brightness(150%);
+    }
+ 
+    #form-page{
+        background-image: url("images/pexels-alena-darmel-6940144.jpg");
+        background-size: 100%;
+    }
+
+    #form-contact{
+        background-color:  rgb(165, 255, 81);;
+        box-shadow: 0px 0px 25px 5px greenyellow;
+    }
+    
+    #form-contact h1{
+       letter-spacing: 0.2em; 
+       font-size: 2em;
+       text-shadow: 1px 1px grey;
+    }
+    
+    .form-info{
+        width: 60%;
+        margin:2% 15% 2% 15%;
+        text-shadow: 1px 1px grey;
+    }
+    
+    #form-contact label, #form-contact legend{
+        text-shadow: 1px 1px grey;
+    }
+    
+    #form-subscrib{
+        background-color: greenyellow;
+        color:white;
+        box-shadow: 1px 1px 3px 1px rgb(163, 204, 101);
+    }
+    
+    #form-subscrib:hover{
+        animation-name: color-subscrib;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes color-subscrib{
+        from{background-color: greenyellow; color:white; font-size: 1.2em;  box-shadow: 1px 1px 3px 1px rgb(163, 204, 101);}
+        to {background-color: rgb(255, 238, 0); color:#C39430; font-size:1.3em;font-weight: bold;box-shadow: 0px 1px 25px 10px rgb(255, 219, 135);}
+    }
+    }
+    
+    @media all and (orientation: portrait){
+   
+    .menu  
+    {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        background:  rgb(148, 179, 124);
+        height: 220px;
+        width:100%;
+        margin:0% 0% 0% 0%;
+        justify-content: center;
+    }
+ 
+    .menu ul {
+        display:none;
+        width: 100%;
+        flex-direction: column;
+        margin:10% 0% 5% 0%;
+
+    }
+
+    .menu ul, .menu li{
+        height:auto;
+        width: 100%;
+        font-size: 1.7em;
+    }  
+ 
+    label 
+    {
+        width: 100px;
+        display: flex;
+        margin: 2% 25% 2% 25%;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #toggle:checked + ul {
+        display: flex;
+
+    }
+
+    #home{
+        background-color: black;
+        background-image: url("images/live-makotosan.jpg");
+        background-repeat: no-repeat;
+        background-size: 170% auto;
+        background-position: 50% 60%;
+    }
+
+    #home-content h1{
+        font-size: 5em;
+        font-family: 'Poor Story', cursive;
+    }
+    #home-content h2{
+        font-size: 3em;
+        margin:5% 20% 0% 20%;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #social-media{
+        width:100%;
+        padding:1% 5% 1% 5%;
+    }
+    .menu-footer{
+        position: sticky;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 70%;
+        padding:1% 5% 1% 5%;
+    }
+
+
+    
+    .logo{
+        margin:5% 1% 5% 1%;
+        width: 80px;
+        border-radius: 30px;
+    }
+
+    .menu-footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        position: sticky;
+    }
+    
+    .menu-footer ul a{
+        font-size: 2rem;
+    }
+
+    #bloc-actu-content{
+        display: flex;
+        flex-direction: column;
+        padding:5% 5% 5% 5%;
+        background-color: antiquewhite;
+    }
+    
+    .image-actu{
+        width:90%;
+        border-radius: 30px;
+    }
+    
+    .bloc-actu{
+        background-color: rgb(148, 179, 124);
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        justify-content: center;
+        margin:5% 2% 5% 2%;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 30px;
+        
+    }
+
+    .content-actu p{
+        font-size:4rem;
+    }
+    .content-actu h1{
+        font-size: 5rem;
+    }
+
+    #clip-page{
+        background-color: antiquewhite;
+    }
+    
+    #clip-spotify{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    #all-clip{
+        margin:2% 2% 2% 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #clip-page h1{
+        font-size: 4.5em;
+    }
+    .show-clip{
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        height:auto;
+        justify-content: center;
+        padding:2% 2% 2% 2%;
+    }
+    
+    .show-clip p, .show-clip h2{
+        margin:2% 2% 2% 2%;
+        font-size: 3rem;
+    }
+    
+    .spotify-element{
+       width:90%;
+       height: 200px;
+    }
+    
+    #body-even{
+        background-color: antiquewhite;
+    }
+    
+    #bandeau-even{
+        width:100%;
+        height:40%;
+        background-image: url(images/live-makotosan.jpg);
+        background-repeat: no-repeat;
+    }
+
+    #bandeau-even h1{
+        color: beige;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Poor Story', cursive;
+        font-weight: bold;
+        letter-spacing: .4rem;
+        padding:40% 20% 5% 20%;
+        animation: waviy 5s infinite linear;
+    }
+    
+    @keyframes waviy {
+        0%,100% {
+          color: #E7FF1D;
+        }
+        20%,80%{
+            color: #FF46F7;
+            font-size: 3.2em;;
+        }
+        40%,60% {
+          color: aqua;
+          font-size: 3.4em;
+        }
+        50%{
+            color: rgb(30, 255, 0);
+          font-size: 3.6em;
+        }
+      }
+    
+    #bloc-evenements{
+        display: flex;
+        flex-direction: column;
+        padding:5%;
+        font-family: 'Poor Story', cursive;
+    }
+    
+    .elem-futur{
+        width:95%;
+        font-size: 2rem;
+    }
+    
+    .elem-futur a {
+        text-decoration: none;
+        color:black
+    }
+    
+    .elem-passe{
+        width:95%;
+        margin:2% 2% 2% 2%;
+        background-color: #E8CB8F;
+        border-radius: 50px;
+        color:#C39430;
+    }
+    
+    .elem-futur:hover{
+        animation: elem 0.1s linear 1 normal forwards;
+    }
+    
+
+    
+    .elem-futur-titre h1, .elem-passe-titre h1{
+        font-size: 5.5rem;
+        margin:2%;
+        color: #AF8327;
+    }
+    
+    #form-page{
+        background-color: #E8CB8F;
+        background-image: none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    #form-contact{
+        background-color:  rgb(148, 179, 124);
+        color: beige;
+        width:80%;
+        margin:30% 10% 5% 8%;
+        height: auto;
+        border-radius: 50px;
+        font-family: 'Poor Story', cursive;
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #form-contact h1{
+       font-size: 2.5rem;
+    }
+    
+    .form-info{
+        width: 90%;
+    }
+    
+    #form-contact label{
+        color:beige;
+        font-size: 3.5rem;
+        padding:1%;
+    }
+    #form-contact legend{
+        color:beige;
+        font-size: 3.5rem;
+    }
+
+    
+    input{
+        height:80px;
+        width:90%;
+        font-size: 4rem;
+    }
+    
+    textarea{
+        width:90%;
+        height:200px;
+        resize:vertical;
+        overflow-y: scroll;
+        font-size: 4rem;
+    }
+
+    #newsletter{
+        width:100%;
+        display:inline-block;
+        display: flex;
+    }
+    #newsletter label{
+        font-size: 0.7em;
+        width:200%;
+        height:150px;
+    }
+
+    #scales{
+        width:60%;
+        margin:5%;
+    }
+    
+    #form-subscrib{
+        width:80%;
+        height: 180px;
+        border-radius: 50px;
+        font-size: 1.2em;
+        margin : 1% 10% 1% 10%;
+    }
+        
+    }
+    
